@@ -14,6 +14,8 @@ final class ScreenViewUseCaseImpl: ScreenViewUseCase {
         let components = className.components(separatedBy: ".")
         
         guard let screenClass = components.last else { return }
+        guard screenClass.count > 0 else { return }
+        
         self.repository.send(
             screenName: input.screenType.rawValue,
             screenClass: screenClass
