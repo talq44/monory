@@ -7,9 +7,7 @@ let project = Project.module(
     targets: [
         .implementation(
             core: .DesignSystemCore,
-            dependencies: [
-                .core(target: .DesignSystemCore, type: .interface),
-            ]
+            dependencies: []
         )
     ]
 )
