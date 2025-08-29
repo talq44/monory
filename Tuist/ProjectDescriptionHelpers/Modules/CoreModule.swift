@@ -1,6 +1,7 @@
 import ProjectDescription
 
 public enum CoreModule: String, CaseIterable {
+	case DesignSystemCore
 	case RemoteConfigCore
 	case AnalyticsCore
 	case UserAPICore
